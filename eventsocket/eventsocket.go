@@ -34,7 +34,7 @@ import (
 
 const bufferSize = 1024 << 6 // For the socket reader
 const eventsBuffer = 16      // For the events channel (memory eater!)
-const timeoutPeriod = 60 * time.Second
+const timeoutPeriod = 15 * time.Second
 
 var errMissingAuthRequest = errors.New("Missing auth request")
 var errInvalidPassword = errors.New("Invalid password")
